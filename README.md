@@ -2,13 +2,13 @@
 
 Game Name: Bodacious Boardwalk
 
-Engine: Unreal Engine — 5.6.1 
+Engine: Unreal Engine 5.6.1 
 
 ## Required Tools
 
 - Unreal Engine `5.6.1`
 - https://git-scm.com/ - Git for version control
-- https://git-lfs.com/ — Git lfs for large files
+- https://git-lfs.com/ - Git lfs for large files
 
 ### Optional Tools
 - Visual Studio 2022, with the **Game development with C++** workload
