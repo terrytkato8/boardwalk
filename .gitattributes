@@ -1,0 +1,155 @@
+# Boardwalk — Unreal Engine, C++ + Blueprints
+
+# Normalize text to LF in the repository
+* text=auto eol=lf
+
+# Unreal text formats
+*.uproject text eol=lf
+*.uplugin  text eol=lf
+*.ini      text eol=lf
+*.cpp      text eol=lf
+*.h        text eol=lf
+*.hpp      text eol=lf
+*.c        text eol=lf
+*.inl      text eol=lf
+*.cs       text eol=lf
+*.usf      text eol=lf
+*.ush      text eol=lf
+*.json     text eol=lf
+*.md       text eol=lf
+*.txt      text eol=lf
+*.xml      text eol=lf
+*.csv      text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+
+# Descriptors, shaders and editor tooling text (UE5)
+*.uprojectdirs text eol=lf
+*.hlsl         text eol=lf
+*.verse        text eol=lf
+*.udn          text eol=lf
+*.natvis       text eol=lf
+*.usda         text eol=lf
+*.mtlx         text eol=lf
+
+# Localization sources under Content/Localization/**
+*.manifest text eol=lf
+*.archive  text eol=lf
+*.po       text eol=lf
+*.pot      text eol=lf
+
+# Scripts are line-ending sensitive
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.sh  text eol=lf
+
+# --- Git LFS: Unreal binary assets ---
+# `lockable` is declared now so file locking can be switched on later without a
+# repo-wide .gitattributes change. Enforcement is OFF by default via
+# `lfs.setlockablereadonly=false`
+*.uasset filter=lfs diff=lfs merge=lfs -text lockable
+*.umap   filter=lfs diff=lfs merge=lfs -text lockable
+*.upk    filter=lfs diff=lfs merge=lfs -text
+*.udk    filter=lfs diff=lfs merge=lfs -text
+
+# --- Git LFS: source art & media ---
+# Images
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.gif   filter=lfs diff=lfs merge=lfs -text
+*.tga   filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.psb   filter=lfs diff=lfs merge=lfs -text
+*.bmp   filter=lfs diff=lfs merge=lfs -text
+*.tif   filter=lfs diff=lfs merge=lfs -text
+*.tiff  filter=lfs diff=lfs merge=lfs -text
+*.exr   filter=lfs diff=lfs merge=lfs -text
+*.hdr   filter=lfs diff=lfs merge=lfs -text
+*.pdn   filter=lfs diff=lfs merge=lfs -text
+*.dds   filter=lfs diff=lfs merge=lfs -text
+*.ico   filter=lfs diff=lfs merge=lfs -text
+*.icns  filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.wav   filter=lfs diff=lfs merge=lfs -text
+*.ogg   filter=lfs diff=lfs merge=lfs -text
+*.mp3   filter=lfs diff=lfs merge=lfs -text
+*.aiff  filter=lfs diff=lfs merge=lfs -text
+*.flac  filter=lfs diff=lfs merge=lfs -text
+*.aif   filter=lfs diff=lfs merge=lfs -text
+
+# Models
+*.fbx   filter=lfs diff=lfs merge=lfs -text
+*.obj   filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.abc   filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.gltf  filter=lfs diff=lfs merge=lfs -text
+*.usd   filter=lfs diff=lfs merge=lfs -text
+*.usdc  filter=lfs diff=lfs merge=lfs -text
+*.usdz  filter=lfs diff=lfs merge=lfs -text
+*.ply   filter=lfs diff=lfs merge=lfs -text
+*.stl   filter=lfs diff=lfs merge=lfs -text
+
+# Volumetrics: OpenVDB feeds Sparse Volume Textures (UE 5.3+)
+*.vdb   filter=lfs diff=lfs merge=lfs -text
+
+# MetaHuman rig definition
+*.dna   filter=lfs diff=lfs merge=lfs -text
+
+# DCC / texturing project files. Not consumed by the engine, but they are the
+# only editable source for the assets that are.
+*.max     filter=lfs diff=lfs merge=lfs -text
+*.ma      filter=lfs diff=lfs merge=lfs -text
+*.mb      filter=lfs diff=lfs merge=lfs -text
+*.ztl     filter=lfs diff=lfs merge=lfs -text
+*.blend1  filter=lfs diff=lfs merge=lfs -text
+*.spp     filter=lfs diff=lfs merge=lfs -text
+*.sbsar   filter=lfs diff=lfs merge=lfs -text
+
+# Motion capture source for Take Recorder / Live Link
+*.bvh   filter=lfs diff=lfs merge=lfs -text
+*.c3d   filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.ttf filter=lfs diff=lfs merge=lfs -text
+*.otf filter=lfs diff=lfs merge=lfs -text
+*.ttc filter=lfs diff=lfs merge=lfs -text
+
+# Video
+*.mp4  filter=lfs diff=lfs merge=lfs -text
+*.mov  filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.avi  filter=lfs diff=lfs merge=lfs -text
+*.mkv  filter=lfs diff=lfs merge=lfs -text
+*.wmv  filter=lfs diff=lfs merge=lfs -text
+
+# Native / compiled binaries.
+*.dll    filter=lfs diff=lfs merge=lfs -text
+*.so     filter=lfs diff=lfs merge=lfs -text
+*.a      filter=lfs diff=lfs merge=lfs -text
+*.lib    filter=lfs diff=lfs merge=lfs -text
+*.dylib  filter=lfs diff=lfs merge=lfs -text
+*.bundle filter=lfs diff=lfs merge=lfs -text
+*.aar    filter=lfs diff=lfs merge=lfs -text
+*.pfx    filter=lfs diff=lfs merge=lfs -text
+
+# Documents & archives — no delta compression to gain
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z  filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+
+# --- Git LFS: compiled Unreal runtime data ---
+*.locres  filter=lfs diff=lfs merge=lfs -text
+*.locmeta filter=lfs diff=lfs merge=lfs -text
+*.udic    filter=lfs diff=lfs merge=lfs -text
+
+# --- Git LFS: platform signing material ---
+# Rules only; committing an unencrypted signing key or keystore is a separate
+# decision and generally bad. Prefer CI secrets.
+*.keystore        filter=lfs diff=lfs merge=lfs -text
+*.p12             filter=lfs diff=lfs merge=lfs -text
+*.mobileprovision filter=lfs diff=lfs merge=lfs -text
