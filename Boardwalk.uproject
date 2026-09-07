@@ -46,6 +46,10 @@
 		{
 			"Name": "SemanticSearchToolset",
 			"Enabled": true
+		},
+		{
+			"Name": "AnimationAssistantToolset",
+			"Enabled": true
 		}
 	]
 }
